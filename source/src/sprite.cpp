@@ -1,6 +1,7 @@
 #include "graphics.h"
 #include "globals.h"
 #include "sprite.h"
+#include <cstdlib>
 #include <stdio.h>
 Sprite::Sprite() {
 
@@ -47,7 +48,7 @@ const sides::Side Sprite::getCollisionSide(Rectangle &other) const {
 	amountTop = other.getBottom() - this->getBoundingBox().getTop();
 	amountBottom = this->getBoundingBox().getBottom() - other.getTop();
 
-	int values[4] = {abs(amountRight), abs(amountLeft), abs(amountTop), abs(amountBottom)};
+	int values[4] = { std::abs(amountRight), std::abs(amountLeft), std::abs(amountTop), std::abs(amountBottom) };
 	int lowest = values[4];
 	for(int i = 0; i < 4; i++) {
 		if(values[i] < lowest) {

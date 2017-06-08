@@ -1,7 +1,7 @@
 #include "level.h"
 #include "graphics.h"
 #include "globals.h"
-
+#include <stdio.h>
 #include "tinyxml2.h"
 
 #include <SDL2/SDL.h>

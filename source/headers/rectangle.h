@@ -37,8 +37,8 @@ class Rectangle {
 			return
 					this->getRight() >= other.getLeft() &&
 					this->getLeft() <= other.getRight() &&
-					this->getTop() <= other.getTop() &&
-					this->getBottom() >= other.getBottom();
+					this->getTop() <= other.getBottom() &&
+					this->getBottom() >= other.getTop();
 		}
 
 		const bool isValidRectangle() const {

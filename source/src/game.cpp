@@ -3,7 +3,7 @@
 #include "game.h"
 #include "graphics.h"
 #include "input.h"
-
+#include <stdio.h>
 namespace {
     const int FPS = 50;
     const int MAX_FRAME_TIME = 5 * 1000 / FPS;
@@ -23,6 +23,7 @@ void Game::gameLoop() {
     Input input;
     SDL_Event event;
 
+    printf("Hey");
     this->_level = Level("map1", Vector2(100, 100), graphics);
     this->_player = Player(graphics, this->_level.getPlayerSpawnPoint());
     int LAST_UPDATE_TIME = SDL_GetTicks();
