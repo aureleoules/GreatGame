@@ -24,7 +24,7 @@ void Game::gameLoop() {
     SDL_Event event;
 
     this->_player = Player(graphics, 100, 100);
-    this->_level = Level("Map1", Vector2(100, 100), graphics);
+    this->_level = Level("map1", Vector2(100, 100), graphics);
     int LAST_UPDATE_TIME = SDL_GetTicks();
 
     while(true) {
