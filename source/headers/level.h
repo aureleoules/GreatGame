@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 
+#include "rectangle.h"
 #include "globals.h"
 #include "tile.h"
 
@@ -20,7 +21,11 @@ class Level {
         ~Level();
         void update(int elapsedTime);
         void draw(Graphics &graphics);
+
+        std::vector<Rectangle> checkTileCollision(const Rectangle &other);
         
+        const Vector2 getPlayerSpawnPoint() const;
+
     private:
         std::string _mapName;
         Vector2 _spawnPoint;
@@ -32,6 +37,7 @@ class Level {
 
         std::vector<Tile> _tileList;
         std::vector<Tileset> _tilesets;
+        std::vector<Rectangle> _collisionRects;
 
         void loadMap(std::string mapName, Graphics &graphics);
 

@@ -5,7 +5,7 @@
 
 class Rectangle {
 	public:
-		Rectangle();
+		Rectangle() {};
 		Rectangle(int x, int y, int width, int height):
 			_x(x),
 			_y(y),
@@ -36,14 +36,15 @@ class Rectangle {
 		const bool collidesWith(const Rectangle &other) const {
 			return
 					this->getRight() >= other.getLeft() &&
-					this->getLeft() <= other.getRight &&
+					this->getLeft() <= other.getRight() &&
 					this->getTop() <= other.getTop() &&
 					this->getBottom() >= other.getBottom();
 		}
 
-		const bool isValidRectangle() bool {
+		const bool isValidRectangle() const {
 			return (this->_x >= 0 && this->_y >= 0 && this->_width >= 0 && this->_height >= 0);
 		}
+
 	private:
 		int _x, _y, _width, _height;
 
