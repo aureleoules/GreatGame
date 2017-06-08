@@ -22,7 +22,6 @@ class Player : public AnimatedSprite {
 
         const float getX() const;
         const float getY() const;
-
     private:
         float _dx, _dy;
 

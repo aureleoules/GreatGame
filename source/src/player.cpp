@@ -32,11 +32,11 @@ void Player::animationDone(std::string currentAnimation) {
     
 }
 
-const float Player::getX() {
+const float Player::getX() const {
 	return this->_x;
 }
 
-const float Player::getY() {
+const float Player::getY() const {
 	return this->_y;
 }
 
