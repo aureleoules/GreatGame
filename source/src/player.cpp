@@ -3,13 +3,17 @@
 
 namespace player_constants {
     const float WALK_SPEED = 0.2f;
+    const float GRAVITY = 0.002f;
+    const float GRAVITY_CAP = 0.8f;
+
 
 }
 
 Player::Player() {}
 
 Player::Player(Graphics &graphics, float x, float y) :
-    AnimatedSprite(graphics, "content/sprites/MyChar.png", 0, 0, 16, 16, x, y, 100) {
+    AnimatedSprite(graphics, "content/sprites/MyChar.png", 0, 0, 16, 16, x, y, 100),
+		_dx(0), _dy(0), _facing(RIGHT), _grounded(false) {
         graphics.loadImage("content/sprites/MyChar.png");
 
         this->setupAnimations();
@@ -26,6 +30,14 @@ void Player::setupAnimations() {
 
 void Player::animationDone(std::string currentAnimation) {
     
+}
+
+const float Player::getX() {
+	return this->_x;
+}
+
+const float Player::getY() {
+	return this->_y;
 }
 
 void Player::moveLeft() {
@@ -46,7 +58,12 @@ void Player::stopMoving() {
 }
 
 void Player::update(float elapsedTime) {
-    this->_x += this->_dx * elapsedTime;
+	if(this->_dy <= player_constants::GRAVITY_CAP) {
+		this->_dy += player_constants::GRAVITY * elapsedTime;
+	}
+
+	this->_x += this->_dx * elapsedTime;
+	this->_y += this->_dy * elapsedTime;
 
     AnimatedSprite::update(elapsedTime);
 
