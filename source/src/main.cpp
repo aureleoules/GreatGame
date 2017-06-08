@@ -7,3 +7,7 @@ int WinMain(int args, const char* argv[]) {
     
     return 0;
 }
+int main(int args, const char* argv[]) {
+	Game game;
+	return 0;
+}
