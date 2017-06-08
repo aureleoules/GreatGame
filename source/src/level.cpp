@@ -51,6 +51,7 @@ void Level::loadMap(std::string mapName, Graphics &graphics) {
 			const char* source = pTileset->FirstChildElement("image")->Attribute("source");
 			char* path;
 			std::stringstream ss;
+			printf(source);
 			ss << source;
 			pTileset->QueryIntAttribute("firstgid", &firstgid);
 			SDL_Texture* tex = SDL_CreateTextureFromSurface(graphics.getRenderer(), graphics.loadImage(ss.str()));
