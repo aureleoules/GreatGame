@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="2017.05.26" orientation="orthogonal" renderorder="right-down" width="20" height="16" tilewidth="16" tileheight="16" nextobjectid="29">
- <tileset firstgid="1" name="prtCave" tilewidth="16" tileheight="16" tilecount="0" columns="0">
-  <image source="content/tilesets/PrtCave.png" width="256" height="80"/>
+<map version="2017.05.26" orientation="orthogonal" renderorder="right-down" width="20" height="16" tilewidth="16" tileheight="16" nextobjectid="97">
+ <tileset firstgid="1" name="prtCave" tilewidth="16" tileheight="16" tilecount="80" columns="16">
+  <image source="../../../content/tilesets/PrtCave.png" width="256" height="80"/>
  </tileset>
  <layer name="background" width="20" height="16">
   <data>
@@ -652,22 +652,44 @@
   </data>
  </layer>
  <objectgroup name="collisions">
-  <object id="1" x="144.823" y="17.4994" width="14.1805" height="14.4823"/>
-  <object id="2" x="141.886" y="61.2018" width="19.0541" height="23.8156"/>
-  <object id="3" x="111.634" y="79.9541" width="80.2559" height="15.3874"/>
-  <object id="4" x="58.2308" y="28.0594" width="23.5337" height="107.41"/>
-  <object id="5" x="53.4033" y="125.513" width="58.041" height="16.5943"/>
-  <object id="6" x="59.7433" y="126.116" width="52.0342" height="82.8975"/>
-  <object id="7" x="128.53" y="144.219" width="46.0673" height="16.6891"/>
-  <object id="8" x="193.159" y="145.124" width="23.7208" height="17.5138"/>
-  <object id="9" x="209.088" y="128.228" width="31.0765" height="19.1173"/>
-  <object id="11" x="174.089" y="25.6457" width="12.0685" height="37.7142"/>
-  <object id="14" x="238.052" y="98.6604" width="11.4651" height="32.2834"/>
-  <object id="15" x="81.0167" y="183.585" width="132.499" height="25.6087"/>
-  <object id="16" x="206.372" y="145.386" width="26.1779" height="62.6457"/>
+  <object id="76" x="128" y="144" width="48" height="16"/>
+  <object id="77" x="192" y="144" width="16" height="16"/>
+  <object id="79" x="208" y="128" width="32" height="16"/>
+  <object id="80" x="112" y="80" width="80" height="16"/>
+  <object id="81" x="80" y="128" width="32" height="48"/>
+  <object id="82" x="238.5" y="89.75" width="23.25" height="48"/>
+  <object id="83" x="192.25" y="80.25" width="53.75" height="12.5"/>
+  <object id="84" x="224.5" y="93.25" width="21.25" height="7.5"/>
+  <object id="86" x="176.75" y="23" width="14.75" height="44"/>
+  <object id="87" x="144" y="64" width="16" height="16"/>
+  <object id="88" x="160" y="64" width="32" height="16"/>
+  <object id="89" x="112" y="16" width="48" height="16"/>
+  <object id="90" x="52" y="61.25" width="27.25" height="49.25"/>
+  <object id="91" x="89.75" y="33.25" width="21.5" height="22"/>
+  <object id="92" x="74.75" y="44.5" width="19.25" height="16.25"/>
+  <object id="94" x="160" y="16" width="16" height="16"/>
+  <object id="95" x="164" y="31.5" width="16.25" height="3.75"/>
+  <object id="96" x="206.25" y="159" width="13" height="15.25"/>
+ </objectgroup>
+ <objectgroup name="slopes">
+  <object id="55" x="176.091" y="191">
+   <polyline points="0,0 30.5455,-19.3636"/>
+  </object>
+  <object id="56" x="113.909" y="176.364">
+   <polyline points="0,0 34.0909,14.4545 62.1818,14.5455"/>
+  </object>
+  <object id="57" x="110.909" y="125.636">
+   <polyline points="0,0 -30.9091,-14.5455"/>
+  </object>
+  <object id="58" x="231.455" y="127.636">
+   <polyline points="0,0 8.18182,-4.90909"/>
+  </object>
+  <object id="59" x="161.091" y="63.8182">
+   <polyline points="0,0 14.5455,-4.18182"/>
+  </object>
  </objectgroup>
  <objectgroup color="#00ff00" name="spawnPoints">
-  <object id="17" name="player" x="159.171" y="123.264" width="2.57298" height="2.77091">
+  <object id="17" name="player" x="148.171" y="50.264" width="2.57298" height="2.77091">
    <ellipse/>
   </object>
  </objectgroup>
