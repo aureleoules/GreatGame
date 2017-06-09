@@ -75,8 +75,9 @@ void Game::draw(Graphics &graphics) {
 void Game::update(float elapsedTime) {
     this->_player.update(elapsedTime);
     this->_level.update(elapsedTime);
+
     std::vector<Rectangle> others;
-    if((others = this->_level.checkTileCollision(this->_player.getBoundingBox())).size() > 0) {
+    if((others = this->_level.checkTileCollisions(this->_player.getBoundingBox())).size() > 0) {
     	this->_player.handleTileCollisions(others);
     }
 }

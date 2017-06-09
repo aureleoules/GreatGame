@@ -653,21 +653,21 @@
  </layer>
  <objectgroup name="collisions">
   <object id="1" x="144.823" y="17.4994" width="14.1805" height="14.4823"/>
-  <object id="2" x="144.219" y="64.8685" width="15.3874" height="14.4823"/>
+  <object id="2" x="141.886" y="61.2018" width="19.0541" height="23.8156"/>
   <object id="3" x="111.634" y="79.9541" width="80.2559" height="15.3874"/>
   <object id="4" x="58.2308" y="28.0594" width="23.5337" height="107.41"/>
-  <object id="5" x="53.4033" y="125.513" width="60.041" height="16.5943"/>
-  <object id="6" x="107.41" y="126.116" width="6.03427" height="58.2308"/>
-  <object id="7" x="128.53" y="144.219" width="47.0673" height="15.6891"/>
-  <object id="8" x="192.493" y="145.124" width="15.3874" height="14.1805"/>
-  <object id="9" x="209.088" y="128.228" width="31.0765" height="14.784"/>
+  <object id="5" x="53.4033" y="125.513" width="58.041" height="16.5943"/>
+  <object id="6" x="59.7433" y="126.116" width="52.0342" height="82.8975"/>
+  <object id="7" x="128.53" y="144.219" width="46.0673" height="16.6891"/>
+  <object id="8" x="193.159" y="145.124" width="23.7208" height="17.5138"/>
+  <object id="9" x="209.088" y="128.228" width="31.0765" height="19.1173"/>
   <object id="11" x="174.089" y="25.6457" width="12.0685" height="37.7142"/>
   <object id="14" x="238.052" y="98.6604" width="11.4651" height="32.2834"/>
-  <object id="15" x="114.35" y="185.252" width="93.833" height="13.2754"/>
-  <object id="16" x="206.372" y="161.719" width="7.84456" height="25.6457"/>
+  <object id="15" x="81.0167" y="183.585" width="132.499" height="25.6087"/>
+  <object id="16" x="206.372" y="145.386" width="26.1779" height="62.6457"/>
  </objectgroup>
  <objectgroup color="#00ff00" name="spawnPoints">
-  <object id="17" name="player" x="157.837" y="120.264" width="2.57298" height="2.77091">
+  <object id="17" name="player" x="159.171" y="123.264" width="2.57298" height="2.77091">
    <ellipse/>
   </object>
  </objectgroup>

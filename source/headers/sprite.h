@@ -26,7 +26,7 @@ class Sprite {
 
     protected:
         SDL_Rect _sourceRect;
-        SDL_Texture* _spriteSheets;
+        SDL_Texture* _spriteSheet;
 
         Rectangle _boundingBox;
 

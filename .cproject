@@ -95,7 +95,7 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.release.174807869" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.release"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.release.1473795224" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.release">
-								<option id="gnu.cpp.link.option.flags.1750093868" name="Linker flags" superClass="gnu.cpp.link.option.flags" useByScannerDiscovery="false" value="-lSDL2 -lSDL2_image" valueType="string"/>
+								<option id="gnu.cpp.link.option.flags.1750093868" name="Linker flags" superClass="gnu.cpp.link.option.flags" useByScannerDiscovery="false" value="-lSDL2 -lSDL2_image -static-libgcc -static-libstdc++" valueType="string"/>
 								<option id="gnu.cpp.link.option.libs.516843966" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
 									<listOptionValue builtIn="false" value="SDL2"/>
 									<listOptionValue builtIn="false" value="SDL2_image"/>
